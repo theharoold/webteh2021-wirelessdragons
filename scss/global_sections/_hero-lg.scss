@@ -1,0 +1,52 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+#hero-section {
+  background: #134674;
+  background: -webkit-radial-gradient(top, #134674, #15213D);
+  background: -moz-radial-gradient(top, #134674, #15213D);
+  background: radial-gradient(to bottom, #134674, #15213D);
+
+  border-radius: 0 0 0 90px;
+
+  .navbar {
+    padding-top: 45px;
+
+    a {
+      color: $gray-100;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+
+      &:hover{
+        color: #fafafab0;
+      }
+    }
+  }
+
+  .hero-content{
+    img {
+      position: relative;
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $phone) {
+  #hero-section {
+    border-radius: 0 0 0 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  #hero-section {
+    border-radius: 0 0 0 0;
+    
+    .hero-content{      
+      img {
+        padding-top: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "webteh2021-projekat-webteh2021-wirelessdragons",
+  "version": "1.0.0",
+  "description": "html canvas project\u001b[D\u001b[C",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FTNCacak/webteh2021-projekat-webteh2021-wirelessdragons.git"
+  },
+  "keywords": [
+    "canvas",
+    "bootstrap",
+    "sass"
+  ],
+  "author": "WirelessDragons",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FTNCacak/webteh2021-projekat-webteh2021-wirelessdragons/issues"
+  },
+  "homepage": "https://github.com/FTNCacak/webteh2021-projekat-webteh2021-wirelessdragons#readme",
+  "devDependencies": {
+    "sass": "^1.49.7"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

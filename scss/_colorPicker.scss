@@ -1,0 +1,45 @@
+@use 'custom' as *;
+
+#color-picker-main{
+  height: 80.7vh;
+}
+
+#color-picker-canvas {
+  width: 500px;
+  height: 250px;
+  background-color: #000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input#colorpic {
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  float: left;
+  cursor: pointer;
+}
+
+#colorCode {
+  width: 150px;
+  padding: 10px;
+  border: #000;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  float: left;
+  color: black;
+}
+
+.color-pick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 75px 50px 25px;
+}
+
+.color-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

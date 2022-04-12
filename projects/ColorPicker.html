@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no">
+
+    <title>Color Picker</title>
+    
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="border-bottom bg-white">
+        <div class="container ">
+          <nav class="navbar navbar-expand-lg navbar-dark py-3">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../images/logo-orange-dark.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="dropdown">
+              <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Color Picker
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="../projects/DrawingLetters.html">Drawing Letters</a></li>
+                <li><a class="dropdown-item" href="../projects/PaintApp.html">Paint App</a></li>
+                <li><a class="dropdown-item" href="../projects/CloudyTrip.html">Clody Trip</a></li>
+                <li><a class="dropdown-item" href="#">Color Picker</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../projects.html">All Projects</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
+      </header>
+
+      <section id="color-picker-main">
+          <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+            <div class="color-pic">
+                <input type="color" id="colorpic">
+                <div id="colorCode">#000</div>
+            </div>
+          <div class="color-pick">
+              <canvas id="color-picker-canvas"></canvas>
+          </div>
+          </div>
+          
+      </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="../images/logo.png" alt="Project image">
+            </a>
+            <p>Copyright &COPY; 2022 | All Right Reserved</p>
+        </div>
+      </footer>
+
+    <script>
+        var canvas = document.getElementById("color-picker-canvas");
+        var input = document.getElementById("colorpic");
+        var colorCode = document.getElementById("colorCode");
+
+        input.addEventListener("input", setColor);
+        function setColor(){
+            canvas.style.backgroundColor = input.value;
+            colorCode.innerHTML = input.value;
+        }
+        setColor();
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

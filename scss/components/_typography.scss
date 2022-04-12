@@ -1,0 +1,65 @@
+@use '../custom' as *;
+
+.h1-copy {
+  margin-top: -30px;
+  margin-bottom: 10px;
+
+  .overline {
+    color: $gray-100;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-left: 3px;
+  }
+
+  .heading {
+    font-family: 'Inter', sans-serif;
+    color: $gray-100;
+    font-weight: 800;
+    font-size: 3.9rem;
+  }
+
+  .accent {
+    color: $primary;
+  }
+
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: $gray-200;
+    line-height: 2rem;
+  }
+}
+
+.h2-copy {
+  margin-bottom: 10px;
+
+  .heading {
+    font-family: 'Inter', sans-serif;
+    color: $blue-dark;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+
+  .overline {
+    color: $gray-overline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #191919;
+  }
+}
+
+h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}

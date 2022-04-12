@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="../css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    </head>
+    <body>
+        <!-- HEADER & NAVIGATION -->
+        <header class="border-bottom bg-white">
+            <div class="container ">
+              <nav class="navbar navbar-expand-lg navbar-dark py-3">
+              <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                  <img src="../images/logo-orange-dark.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="dropdown">
+                  <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cloudy Trip
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="../projects/DrawingLetters.html">Drawing Letters</a></li>
+                    <li><a class="dropdown-item" href="../projects/PaintApp.html">Paint App</a></li>
+                    <li><a class="dropdown-item" href="#">Cloudy Trip</a></li>
+                    <li><a class="dropdown-item" href="../projects/ColorPicker.html">Color Picker</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../projects.html">All Projects</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            </div>
+          </header>
+
+          <!-- MAIN PART -->
+          <div class="containter-fluid" id="VL_mainContainer">
+            <canvas id="VL_canvas">
+
+            </canvas>
+            <div class="container d-flex align-items-center justify-content-center">
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary" id="nightDay">Day/Night</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-primary" id="Rain">Rain</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-primary" id="Snow">Snow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="../images/logo.png" alt="Project image">
+                </a>
+                <p>Copyright &COPY; 2022 | All Right Reserved</p>
+            </div>
+          </footer>
+        <script src="../js/cloudyTrip.js"></script>
+    </body>
+</html>

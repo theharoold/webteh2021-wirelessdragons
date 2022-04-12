@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Letters</title>
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- HEADER & NAVIGATION -->
+  <header class="border-bottom bg-white">
+    <div class="container ">
+      <nav class="navbar navbar-expand-lg navbar-dark py-3">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/logo-orange-dark.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="dropdown">
+          <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Drawing Letters
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Drawing Letters</a></li>
+            <li><a class="dropdown-item" href="../projects/PaintApp.html">Paint App</a></li>
+            <li><a class="dropdown-item" href="../projects/CloudyTrip.html">Clody Trip</a></li>
+            <li><a class="dropdown-item" href="../projects/ColorPicker.html">Color Picker</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../projects.html">All Projects</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+  </header>
+<section id="drawingApp">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 mb-3">
+                <p class="section-name">Enter the text to draw</p>
+                <input type="text" id="drawText" class="form-control" placeholder="Enter the text to draw">
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <p class="section-name mb-0">Choose a color</p>
+                <input type="radio" name="color" class="colorRadio" value="black" checked>
+                <label for="color" class="form-label me-2">Black</label>
+                <!-- <br> -->
+                <input type="radio" name="color" class="colorRadio" value="red">
+                <label for="color" class="form-label me-2">Red</label>
+                <!-- <br> -->
+                <input type="radio" name="color" class="colorRadio" value="green">
+                <label for="color" class="form-label me-2">Green</label>
+                <!-- <br> -->
+                <input type="radio" name="color" class="colorRadio" value="blue">
+                <label for="color" class="form-label me-2">Blue</label>
+                <!-- <br> -->
+                <input type="button" class="btn btn-secondary" value="Export image" id="exportBtn">
+            </div>
+        </div>
+
+        <div class="canvasPart">
+            <canvas id='text-canvas'></canvas>
+            <span id='info'>Click and drag to draw!<span>
+        </div>
+
+        <div class="exportImage">After exporting, the image will appear here</div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="../images/logo.png" alt="Project image">
+        </a>
+        <p>Copyright &COPY; 2022 | All Right Reserved</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../js/drawingLetters.js"></script>
+</body>
+</html>

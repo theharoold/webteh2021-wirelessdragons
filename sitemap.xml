@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>index.html</loc>
+	</url>
+	<url>
+		<loc>CanvasTutorial.html</loc>
+	</url>
+	<url>
+		<loc>team.html</loc>
+	</url>
+	<url>
+		<loc>projects.html</loc>
+	</url>
+	<url>
+		<loc>CloudyTrip.html</loc>
+	</url>
+	<url>
+		<loc>ColorPicker.html</loc>
+	</url>
+	<url>
+		<loc>DrawingLetters.html</loc>
+	</url>
+	<url>
+		<loc>PaintApp.html</loc>
+	</url>
+</urlset>

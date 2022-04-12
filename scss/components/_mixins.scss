@@ -1,0 +1,18 @@
+@use '../custom' as *;
+
+@mixin gradientBtn {
+  background: rgb(248,186,84);
+  background: linear-gradient(180deg, rgba(248,186,84,1) 0%, rgba(240,125,74,1) 100%);
+}
+
+@mixin gradientBtnGreen {
+  background: linear-gradient(180deg, rgb(172, 248, 84) 0%, rgb(26, 200, 78) 100%);
+}
+
+@mixin gradientBtnPink {
+  background: linear-gradient(180deg, rgb(237, 102, 255) 0%, rgb(149, 51, 230) 100%);
+}
+
+@mixin gradientBtnBlue {
+  background: linear-gradient(180deg, rgb(84, 202, 248) 0%, rgb(26, 122, 200)100%);
+}

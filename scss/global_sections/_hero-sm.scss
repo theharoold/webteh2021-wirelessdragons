@@ -1,0 +1,33 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+a {
+  text-decoration: none;
+}
+
+#hero-section-sm {
+  background: url('../images/LineArt.png')  no-repeat center center/cover, radial-gradient(top, #134774, #15213d);
+  background: url('../images/LineArt.png') no-repeat center/cover, -moz-radial-gradient(top, #134774, #15213d);
+  background: url('../images/LineArt.png') no-repeat center/cover, -webkit-radial-gradient(top, #134774, #15213d);
+
+  padding-bottom: 30px;
+
+  .navbar {
+    padding-top: 45px;
+
+    a {
+      color: $gray-100;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      transition: all 0.3s ease;
+
+      &:hover{
+        color: #fafafab0;
+      }
+    }
+  }
+
+  .selected{
+    color: $orange !important;
+  }
+}

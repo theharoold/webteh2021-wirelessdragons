@@ -1,0 +1,50 @@
+// @use 'sections/hero' as *;
+@use 'custom' as *;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#drawingApp{
+  padding-top: 40px;
+}
+
+.section-name{
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.canvasPart{
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+.exportImage{
+  width: 100%;
+  text-align: center;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+  margin:40px 0;
+  padding: 20px;
+}
+
+#text-canvas {
+  width: 100%;
+  max-height: 60vh;
+  cursor: crosshair;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#info{
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  top:60px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 300px;
+  z-index: 100;
+}

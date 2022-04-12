@@ -1,0 +1,35 @@
+@use 'custom' as *; //using custom.scss as a module
+
+// Landing page section
+@use 'landing_sections/getStarted';
+@use 'landing_sections/overview';
+@use 'landing_sections/projects-section';
+@use 'landing_sections/cnavas-history';
+
+// Global sections
+@use 'global_sections/hero-lg';
+@use 'global_sections/hero-sm';
+@use 'global_sections/footer';
+
+// Global components
+@use 'components/typography';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/cards';
+
+// Canvas projects
+@use 'drawingApp';
+@use 'paintApp';
+@use 'colorPicker';
+@use 'cloudyTrip';
+
+// Pages
+@use 'canvasTutorial';
+@use 'about';
+
+body {
+  overflow-x: hidden;
+  background: #F9F9F9;
+  // width: 100%;
+  // height: 100%;
+}

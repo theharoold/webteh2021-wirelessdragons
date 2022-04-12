@@ -1,0 +1,61 @@
+@use '../custom' as *;
+
+#projects-section {
+  padding: 100px 0;
+
+  .box {
+    background: #fff;
+    width: 190px;
+    height: 190px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 5px rgba(71, 71, 71, 0.05);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &:hover{
+      transform: scale(105%);
+      box-shadow: 0px 0px 35px 10px rgba(71, 71, 71, 0.07);
+      border-radius: 20px;
+    }
+
+  }
+  .box-container {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: $phone) {
+  
+}
+
+@media screen and (max-width: $tablet) {
+  #projects-section {
+    .box {
+      width: 170px;
+      height: 170px;
+    }
+    .box-container {
+      padding-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #projects-section {
+    .box {
+      width: 150px;
+      height: 150px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .box-container {
+    padding-left: 0;
+  }
+}

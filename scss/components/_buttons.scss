@@ -1,0 +1,84 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.btn {
+  padding: 15px 40px;
+  transition: all 0.5s ease;
+}
+
+.btn-primary {
+  color: $gray-100;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+
+  &:hover{
+    color: white;
+    box-shadow: 0px 0px 35px 1px rgba(250,213,100,0.9), inset 0px 0px 10px 1px rgba(255, 250, 234, 0.9);
+    -webkit-box-shadow:0px 0px 35px 1px rgba(250,213,100,0.9), inset 0px 0px 10px 1px rgba(255, 250, 234, 0.9);
+    -moz-box-shadow: 0px 0px 35px 1px rgba(250,213,100,0.9), inset 0px 0px 10px 1px rgba(255, 250, 234, 0.9);
+  }
+}
+
+.btn-gradient {
+  color: $gray-100;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+}
+
+.btn-gradient-orange {
+  @include gradientBtn;
+
+  &:hover{
+    color: white;
+    box-shadow: 0px 0px 35px 1px rgba(250,213,100,0.9), inset 0px 0px 10px 1px rgba(255, 250, 234, 0.9);
+    -webkit-box-shadow:0px 0px 35px 1px rgba(250,213,100,0.9), inset 0px 0px 10px 1px rgba(255, 250, 234, 0.9);
+    -moz-box-shadow: 0px 0px 35px 1px rgba(250,213,100,0.9), inset 0px 0px 10px 1px rgba(255, 250, 234, 0.9);
+  }
+}
+
+.btn-gradient-green {
+  @include gradientBtnGreen;
+
+  &:hover{
+    color: white;
+    box-shadow: 0px 0px 35px 1px rgba(155, 250, 100, 0.9), inset 0px 0px 10px 1px rgba(244, 255, 234, 0.9);
+    -webkit-box-shadow: 0px 0px 35px 1px rgba(155, 250, 100, 0.9), inset 0px 0px 10px 1px rgba(244, 255, 234, 0.9);
+    -moz-box-shadow: 0px 0px 35px 1px rgba(155, 250, 100, 0.9), inset 0px 0px 10px 1px rgba(244, 255, 234, 0.9);
+  }
+}
+
+.btn-gradient-pink {
+  @include gradientBtnPink;
+
+  &:hover{
+    color: white;
+    box-shadow: 0px 0px 35px 1px rgba(250, 100, 237, 0.9), inset 0px 0px 10px 1px rgba(255, 234, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 35px 1px rgba(250, 100, 237, 0.9), inset 0px 0px 10px 1px rgba(255, 234, 255, 0.9);
+    -moz-box-shadow: 0px 0px 35px 1px rgba(250, 100, 237, 0.9), inset 0px 0px 10px 1px rgba(255, 234, 255, 0.9);
+  }
+}
+
+.btn-gradient-blue {
+  @include gradientBtnBlue;
+
+  &:hover{
+    color: white;
+    box-shadow: 0px 0px 35px 1px rgba(100, 170, 250, 0.9), inset 0px 0px 10px 1px rgba(234, 249, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 35px 1px rgba(100, 170, 250, 0.9), inset 0px 0px 10px 1px rgba(234, 249, 255, 0.9);
+    -moz-box-shadow: 0px 0px 35px 1px rgba(100, 170, 250, 0.9), inset 0px 0px 10px 1px rgba(234, 249, 255, 0.9);
+  }
+}
+
+
+
+.btn-white{
+  border: 2px solid;
+  background-color: #fafafa;
+}
+
+.btn-small {
+  padding: 5px 25px;
+}

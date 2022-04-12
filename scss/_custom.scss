@@ -1,0 +1,35 @@
+// CUSTOMIZING BOOTSTRAP THEME
+
+// color scheme
+$orange:  #FCA311;
+$blue-dark: #14213D;
+$blue-light: #124574;
+
+$gray-heading: #212121;
+$gray-paragraph: #303030;
+$gray-light: #FAFAFA;
+
+$gray-overline: #484848;
+
+// white, gray, black
+$white:    #fff;
+$gray-100: $gray-light;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: $gray-paragraph;
+$gray-900: $gray-heading;
+$black:    #000;
+
+//primary, secondary
+$primary:       $orange;
+$secondary:     $blue-dark;
+
+$phone: 768px;
+$tablet: 1200px;
+
+// IMPORTING BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

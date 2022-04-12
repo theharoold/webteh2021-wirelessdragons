@@ -1,0 +1,73 @@
+@use '../custom' as *;
+
+.small-card {
+
+  margin: 20px 0;
+  transition: all 0.5s ease;
+  // padding: 20px;
+  // cursor: pointer;
+
+  .card-heading {
+
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 10px;
+    }
+
+    .headline{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      color: #212121;
+      margin-top: 5px;
+    }
+  }
+
+  .card-text {
+    font-family: 'Poppins', sans-serif;
+    // line-height: 30px;
+    margin-left: 32px;
+    max-width: 90%;
+    color: #303030;
+  }
+
+  // &:hover{
+  // transform: scale(105%);
+  // box-shadow: 0px 0px 30px 5px rgba(71, 71, 71, 0.05);
+  // border-radius: 20px;
+  // }
+}
+
+.card {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  // cursor: pointer;
+  box-shadow: 0px 0px 30px 5px rgba(71, 71, 71, 0.07);
+  border: none;
+  
+  .card-img-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #252525;
+  }
+
+  .card-text {
+    color: #303030;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0;
+  }
+
+  &:hover{
+  transform: scale(105%);
+  box-shadow: 0px 0px 30px 5px rgba(71, 71, 71, 0.14);
+  
+  }
+}
